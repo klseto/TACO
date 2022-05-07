@@ -18,7 +18,7 @@ Usage:
     python3 split_dataset.py --dataset_dir ../data
 
     # Train a new model starting from pre-trained COCO weights on train set split #0
-    python3 -W ignore detector.py train --model=coco --dataset=../data --class_map=./taco_config/map_10.csv --round 0
+    python -W ignore detector.py train --model=coco --dataset=../data --class_map=./taco_config/map_10.csv --round 0
 
     # Continue training a model that you had trained earlier
     python3 -W ignore detector.py train  --dataset=../data --model=<model_name> --class_map=./taco_config/map_10.csv --round 0
